@@ -120,7 +120,7 @@ class FileManagerApp : public wxApp {
 public:
     bool OnInit() {
         FileManagerFrame* frame = new FileManagerFrame();
-        wxIcon icon("C:/Users/ura21/Downloads/cat.ico", wxBITMAP_TYPE_ICO);
+        wxIcon icon("../Project10/cat.ico", wxBITMAP_TYPE_ICO);
         frame->SetIcon(icon);
         frame->Show();
         return true;
