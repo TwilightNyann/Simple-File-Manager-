@@ -1,2 +1,8 @@
 # FileManager
 This is a code for a simple file manager application in C++ using wxWidgets library. The application features opening a file, deleting a file/directory, renaming a file/directory, copying file path to clipboard, and displaying information about the application. The file manager interface consists of a directory control on the left, path text control in the middle, and buttons for renaming and copying the file path to the clipboard. The application also has a menu bar with options for opening and exiting the application and deleting a file/directory, and information about the application. The application uses the wxGenericDirCtrl widget to display the file system hierarchy and allows the user to navigate through the directories and select a file. The user can rename a file by entering a new name using wxGetTextFromUser. The user can copy the file path to the clipboard using wxTheClipboard.
+
+When the Rename button is pressed, the program prompts the user to enter a new name for the selected file or directory. If the user inputs a new name, the program renames the selected file or directory. If the rename operation fails, the program displays an error message.
+
+When the Copy button is pressed, the program copies the selected file or directory path to the clipboard.
+
+The File menu has options to Open and Delete a selected file or directory, and Exit the program. The Help menu has an About option. When the Open option is selected, the program launches the default application associated with the selected file. When the Delete option is selected, the program deletes the selected file or directory.
