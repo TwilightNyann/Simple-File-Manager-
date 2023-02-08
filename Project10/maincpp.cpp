@@ -93,7 +93,7 @@ public:
                 }
             }
             else if (event.GetId() == wxID_ABOUT) {
-                wxMessageBox("This is a wxWidgets File Manager smple",
+                wxMessageBox("This is a wxWidgets simple File Manager",
                     "About File Manager", wxOK | wxICON_INFORMATION);
             }
             }, wxID_ABOUT, wxID_DELETE);
