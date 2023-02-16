@@ -20,10 +20,18 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <Image Include="..\..\..\..\Downloads\cat.ico">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="cat.ico">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="..\..\..\..\Downloads\main.manifest" />
+  </ItemGroup>
+  <ItemGroup>
     <ClInclude Include="resource.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="resource1.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
@@ -31,13 +39,5 @@
     <ResourceCompile Include="Project10.rc">
       <Filter>Файлы ресурсов</Filter>
     </ResourceCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="..\..\..\..\Downloads\cat.ico">
-      <Filter>Файлы ресурсов</Filter>
-    </Image>
-  </ItemGroup>
-  <ItemGroup>
-    <Manifest Include="..\..\..\..\Downloads\main.manifest" />
   </ItemGroup>
 </Project>

@@ -130,17 +130,17 @@
     <ClCompile Include="maincpp.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="resource.h" />
-    <ClInclude Include="resource1.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="Project10.rc" />
-  </ItemGroup>
-  <ItemGroup>
     <Image Include="..\..\..\..\Downloads\cat.ico" />
+    <Image Include="cat.ico" />
   </ItemGroup>
   <ItemGroup>
     <Manifest Include="..\..\..\..\Downloads\main.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Project10.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
