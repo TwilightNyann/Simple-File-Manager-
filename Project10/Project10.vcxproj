@@ -139,6 +139,9 @@
   <ItemGroup>
     <Image Include="..\..\..\..\Downloads\cat.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="..\..\..\..\Downloads\main.manifest" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -18,6 +18,7 @@ public:
         wxMenu* aboutMenu = new wxMenu();
         fileMenu->Append(wxID_OPEN, "Open");
         fileMenu->Append(wxID_DELETE, "Delete");
+        fileMenu->Append(wxID_NEW, "New window");
         fileMenu->AppendSeparator();
         fileMenu->Append(wxID_EXIT, "Exit");
         aboutMenu->Append(wxID_ABOUT, "About");
@@ -108,9 +109,17 @@ public:
             pathTextCtrl->SetValue(filePath.GetFullPath());
         }
             });
+        Bind(wxEVT_COMMAND_MENU_SELECTED, [=](wxCommandEvent& event) {
+            if (event.GetId() == wxID_NEW) {
+                FileManagerFrame* frame = new FileManagerFrame();
+                wxIcon icon("../Project10/cat.ico", wxBITMAP_TYPE_ICO);
+                frame->SetIcon(icon);
+                frame->Show();
+            }
+            }, wxID_NEW);
 
         SetSizer(sizer);
-        SetSize(800, 600);
+        SetSize(1000, 600);
     }
     
 
@@ -124,6 +133,12 @@ public:
         frame->SetIcon(icon);
         frame->Show();
         return true;
+    }
+    void OnNewWindow(wxCommandEvent& event) {
+        FileManagerFrame* frame = new FileManagerFrame();
+        wxIcon icon("../Project10/cat.ico", wxBITMAP_TYPE_ICO);
+        frame->SetIcon(icon);
+        frame->Show();
     }
 };
 

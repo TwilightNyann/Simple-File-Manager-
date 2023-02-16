@@ -37,4 +37,7 @@
       <Filter>Файлы ресурсов</Filter>
     </Image>
   </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="..\..\..\..\Downloads\main.manifest" />
+  </ItemGroup>
 </Project>
